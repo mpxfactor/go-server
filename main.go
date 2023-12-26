@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"net/http"
 
+	"mpxfactor.com/simple-server/api"
 	"mpxfactor.com/simple-server/data"
 )
 
@@ -27,8 +28,10 @@ func handleTemplate(w http.ResponseWriter, r *http.Request) {
 func main() {
 	server := http.NewServeMux() //serve multiplexer
 	server.HandleFunc("/employees", handleTemplate)
+	server.HandleFunc("/api/getall", api.Get)
+	server.HandleFunc("/api/add", api.Post)
 
-	fmt.Printf("Server running on : http://localhost:%s", PORT)
+	fmt.Printf("Server running on : http://localhost:%s\n", PORT)
 	err := http.ListenAndServe(":"+PORT, server)
 
 	if err == nil {

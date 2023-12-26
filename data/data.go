@@ -31,14 +31,28 @@ type Employee struct {
 	Avatar     string        `json:"avatar"`
 }
 
-func GetAllData() (data []Employee) {
+func GetFinalPath() (string, error) {
 	path, err := os.Getwd()
-
 	if err == nil {
-		finalPath := path + "/public/data.json"
+		return path + "/public/data.json", nil
+	}
+	return "", err
+}
+
+var finalPath, err = GetFinalPath()
+
+func GetAllData() (data []Employee) {
+	if err == nil {
 		byteData, _ := os.ReadFile(finalPath)
 		json.Unmarshal(byteData, &data)
 	}
-
 	return
+}
+
+func AddData(employee Employee) {
+	data := GetAllData()
+	data = append(data, employee)
+
+	fileData, _ := json.MarshalIndent(data, "", " ")
+	os.WriteFile(finalPath, fileData, 0644)
 }
