@@ -1,0 +1,212 @@
+[
+  {
+    "employeeId": 1,
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "age": 28,
+    "position": "Marketing Specialist",
+    "department": "Marketing",
+    "salary": 65000.0,
+    "address": {
+      "street": "456 Oak St",
+      "city": "Cityville",
+      "state": "NY",
+      "zipCode": "54321"
+    },
+    "contact": {
+      "email": "alice.johnson@example.com",
+      "phone": "555-5678"
+    },
+    "isActive": true,
+    "avatar": "http://127.0.0.1:5500/public/avatar.jpg"
+  },
+  {
+    "employeeId": 2,
+    "firstName": "Bob",
+    "lastName": "Smith",
+    "age": 35,
+    "position": "Senior Developer",
+    "department": "Engineering",
+    "salary": 80000.0,
+    "address": {
+      "street": "789 Pine St",
+      "city": "Townsville",
+      "state": "CA",
+      "zipCode": "67890"
+    },
+    "contact": {
+      "email": "bob.smith@example.com",
+      "phone": "555-1234"
+    },
+    "isActive": true,
+    "avatar": "http://127.0.0.1:5500/public/avatar.jpg"
+  },
+  {
+    "employeeId": 3,
+    "firstName": "Catherine",
+    "lastName": "Williams",
+    "age": 32,
+    "position": "HR Manager",
+    "department": "Human Resources",
+    "salary": 70000.0,
+    "address": {
+      "street": "123 Maple St",
+      "city": "Villagetown",
+      "state": "TX",
+      "zipCode": "45678"
+    },
+    "contact": {
+      "email": "catherine.williams@example.com",
+      "phone": "555-8765"
+    },
+    "isActive": true,
+    "avatar": "http://127.0.0.1:5500/public/avatar.jpg"
+  },
+  {
+    "employeeId": 4,
+    "firstName": "David",
+    "lastName": "Miller",
+    "age": 40,
+    "position": "Financial Analyst",
+    "department": "Finance",
+    "salary": 75000.0,
+    "address": {
+      "street": "234 Cedar St",
+      "city": "Hometown",
+      "state": "FL",
+      "zipCode": "23456"
+    },
+    "contact": {
+      "email": "david.miller@example.com",
+      "phone": "555-4321"
+    },
+    "isActive": true,
+    "avatar": "http://127.0.0.1:5500/public/avatar.jpg"
+  },
+  {
+    "employeeId": 5,
+    "firstName": "Eva",
+    "lastName": "Davis",
+    "age": 27,
+    "position": "Graphic Designer",
+    "department": "Design",
+    "salary": 60000.0,
+    "address": {
+      "street": "567 Elm St",
+      "city": "Artville",
+      "state": "CA",
+      "zipCode": "34567"
+    },
+    "contact": {
+      "email": "eva.davis@example.com",
+      "phone": "555-9876"
+    },
+    "isActive": true,
+    "avatar": "http://127.0.0.1:5500/public/avatar.jpg"
+  },
+  {
+    "employeeId": 6,
+    "firstName": "Frank",
+    "lastName": "Jones",
+    "age": 45,
+    "position": "Sales Manager",
+    "department": "Sales",
+    "salary": 85000.0,
+    "address": {
+      "street": "789 Walnut St",
+      "city": "Salestown",
+      "state": "AZ",
+      "zipCode": "78901"
+    },
+    "contact": {
+      "email": "frank.jones@example.com",
+      "phone": "555-2345"
+    },
+    "isActive": true,
+    "avatar": "http://127.0.0.1:5500/public/avatar.jpg"
+  },
+  {
+    "employeeId": 7,
+    "firstName": "Grace",
+    "lastName": "Taylor",
+    "age": 31,
+    "position": "Project Manager",
+    "department": "Project Management",
+    "salary": 72000.0,
+    "address": {
+      "street": "890 Chestnut St",
+      "city": "Projectville",
+      "state": "WA",
+      "zipCode": "89012"
+    },
+    "contact": {
+      "email": "grace.taylor@example.com",
+      "phone": "555-3456"
+    },
+    "isActive": true,
+    "avatar": "http://127.0.0.1:5500/public/avatar.jpg"
+  },
+  {
+    "employeeId": 8,
+    "firstName": "Henry",
+    "lastName": "Anderson",
+    "age": 29,
+    "position": "Customer Support Specialist",
+    "department": "Customer Support",
+    "salary": 62000.0,
+    "address": {
+      "street": "901 Pineapple St",
+      "city": "Supporttown",
+      "state": "FL",
+      "zipCode": "90123"
+    },
+    "contact": {
+      "email": "henry.anderson@example.com",
+      "phone": "555-6543"
+    },
+    "isActive": true,
+    "avatar": "http://127.0.0.1:5500/public/avatar.jpg"
+  },
+  {
+    "employeeId": 9,
+    "firstName": "Isabel",
+    "lastName": "Moore",
+    "age": 33,
+    "position": "Research Scientist",
+    "department": "Research and Development",
+    "salary": 78000.0,
+    "address": {
+      "street": "345 Mango St",
+      "city": "Labtown",
+      "state": "CA",
+      "zipCode": "34567"
+    },
+    "contact": {
+      "email": "isabel.moore@example.com",
+      "phone": "555-8765"
+    },
+    "isActive": true,
+    "avatar": "http://127.0.0.1:5500/public/avatar.jpg"
+  },
+  {
+    "employeeId": 10,
+    "firstName": "Jack",
+    "lastName": "Roberts",
+    "age": 36,
+    "position": "Operations Manager",
+    "department": "Operations",
+    "salary": 82000.0,
+    "address": {
+      "street": "567 Banana St",
+      "city": "Operationstown",
+      "state": "TX",
+      "zipCode": "56789"
+    },
+    "contact": {
+      "email": "jack.roberts@example.com",
+      "phone": "555-2345"
+    },
+    "isActive": true,
+    "avatar": "http://127.0.0.1:5500/public/avatar.jpg"
+  }
+]

@@ -2,20 +2,27 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"net/http"
+
+	"mpxfactor.com/simple-server/data"
 )
 
-func handleGetRequest(w http.ResponseWriter, r *http.Request) {
-	message := []byte("First http get request in go.")
-	w.Write(message)
+func handleTemplate(w http.ResponseWriter, r *http.Request) {
+	html, err := template.ParseFiles("templates/index.tmpl")
+
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte("Internal server error."))
+		return
+	}
+
+	html.Execute(w, data.GetAllData())
 }
 
 func main() {
 	server := http.NewServeMux() //serve multiplexer
-	server.HandleFunc("/get", handleGetRequest)
-
-	fs := http.FileServer(http.Dir("./public"))
-	server.Handle("/", fs)
+	server.HandleFunc("/employees", handleTemplate)
 
 	err := http.ListenAndServe(":8080", server)
 

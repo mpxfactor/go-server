@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Project</title>
+
+    <style>
+      *,
+      ::before,
+      ::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 2rem;
+      }
+
+      main {
+        max-width: 1200px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        margin: auto;
+      }
+
+      .title {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .avatar {
+        width: 200px;
+        aspect-ratio: 1;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      a {
+        border: 1px solid black;
+        text-align: center;
+
+        text-decoration: none;
+        
+        cursor: pointer;
+      }
+
+      a > p {
+        background-color: rgba(41, 35, 35, 0.733);
+        color: white;
+        padding-block: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Employees</h1>
+    </header>
+    <main>
+      {{range .}}
+      <a href="https://google.com">
+        <div class="avatar">
+          <img src="{{.Avatar}}" alt="Avatar Image" />
+        </div>
+
+        <p>{{.FirstName}} {{.LastName}}</p>
+      </a>
+      {{ end }}
+    </main>
+    <footer></footer>
+  </body>
+</html>
