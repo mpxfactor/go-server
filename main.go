@@ -8,6 +8,10 @@ import (
 	"mpxfactor.com/simple-server/data"
 )
 
+const (
+	PORT = "8081"
+)
+
 func handleTemplate(w http.ResponseWriter, r *http.Request) {
 	html, err := template.ParseFiles("templates/index.tmpl")
 
@@ -24,9 +28,11 @@ func main() {
 	server := http.NewServeMux() //serve multiplexer
 	server.HandleFunc("/employees", handleTemplate)
 
-	err := http.ListenAndServe(":8080", server)
+	fmt.Printf("Server running on : http://localhost:%s", PORT)
+	err := http.ListenAndServe(":"+PORT, server)
 
-	if err != nil {
+	if err == nil {
 		fmt.Println("Error while opening the server.")
+		fmt.Println(err)
 	}
 }
